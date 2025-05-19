@@ -1,0 +1,6 @@
+model_year: 2020
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+unsupported_commands_by_ecu:
+  DA11:
+  - DA11.011.222611
