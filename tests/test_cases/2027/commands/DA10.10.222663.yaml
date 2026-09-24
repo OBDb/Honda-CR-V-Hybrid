@@ -1,8 +1,6 @@
 command_id: DA10.10.222663
 test_cases:
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -18,8 +16,6 @@ test_cases:
     18DAF1102700000010000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -35,8 +31,6 @@ test_cases:
     18DAF110270000DF10000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -52,8 +46,6 @@ test_cases:
     18DAF1102700018E10000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -69,8 +61,6 @@ test_cases:
     18DAF1102700010E10000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -86,8 +76,6 @@ test_cases:
     18DAF1102700017210000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -103,8 +91,6 @@ test_cases:
     18DAF110270000AE10000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -120,8 +106,6 @@ test_cases:
     18DAF110270000DF10000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -137,8 +121,6 @@ test_cases:
     18DAF1102700013D10000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
@@ -154,8 +136,6 @@ test_cases:
     18DAF110270000C310000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 1
@@ -171,8 +151,6 @@ test_cases:
     18DAF1102700017610000000
     18DAF1102800005555555555
 - expected_values:
-    CRVH_MISFIRE_5: 0
-    CRVH_MISFIRE_6: 0
     CRVH_MIS_1: 0
     CRVH_MIS_2: 0
     CRVH_MIS_3: 0
