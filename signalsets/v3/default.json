@@ -97,7 +97,7 @@
     {"id": "CRVH_AAT_OUT",      "path": "Engine",  "fmt": {"bix": 840,  "len": 8,  "max": 127,    "min": -40,              "sign": true, "unit": "celsius"     }, "name": "Ambient air temperature, outside"},
     {"id": "CRVH_HVB_CAP",      "path": "Battery", "fmt": {"bix": 1336, "len": 16, "max": 655.35,              "div": 100,               "unit": "ampereHours" }, "name": "High voltage battery total capacity"}
   ]},
-{ "hdr": "DA01", "rax": "01", "cmd": {"22": "202C"}, "freq": 1, "dbgfilter": { "to": 2026, "from": 2028 },
+{ "hdr": "DA01", "rax": "01", "cmd": {"22": "202C"}, "freq": 5, "dbgfilter": { "to": 2026, "from": 2028 },
   "signals": [
     {"id": "CRVH_HVB_MOD_1A_T", "path": "Battery", "fmt": {"bix": 472,  "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 1A temperature"},
     {"id": "CRVH_HVB_MOD_3A_T", "path": "Battery", "fmt": {"bix": 504,  "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 3A temperature"},
@@ -106,7 +106,7 @@
     {"id": "CRVH_ECT_3",        "path": "Engine",  "fmt": {"bix": 1640, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 3",        "suggestedMetric": "engineCoolantTemperature"},
     {"id": "CRVH_ECT_4",        "path": "Engine",  "fmt": {"bix": 1656, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "Engine coolant temperature sensor 4",        "suggestedMetric": "engineCoolantTemperature"}
   ]},
-{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2240"}, "freq": 1,
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2240"}, "freq": 30,
   "signals": [
     {"id": "CRVH_BAT_DIST", "path": "Battery", "fmt": {"bix": 80, "len": 32, "max": 250000, "unit": "kilometers" }, "name": "Distance traveled since last charge"}
   ]},
@@ -158,7 +158,7 @@
     {"id": "CRVH_MIS_3", "path": "Engine", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
     {"id": "CRVH_MIS_4", "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
   ]},
-{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2666"}, "freq": 1,
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2666"}, "freq": 5,
   "signals": [
     {"id": "CRVH_EOT_VAR_3", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 3"},
     {"id": "CRVH_EOT_VAR_4", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 4"}
@@ -195,7 +195,7 @@
     {"id": "CRVH_MISFIRE_COUNT_5_VAR_2", "path": "Engine", "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #5, variant 2"},
     {"id": "CRVH_MISFIRE_COUNT_6_VAR_2", "path": "Engine", "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #6, variant 2"}
   ]},
-{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2666"}, "freq": 1,
+{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2666"}, "freq": 5,
   "signals": [
     {"id": "CRVH_EOT_VAR_1", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 1"},
     {"id": "CRVH_EOT_VAR_2", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 2"}
@@ -209,7 +209,7 @@
     {"id": "CRVH_MISFIRE_COUNT_5_VAR_1", "path": "Engine", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #5, variant 1"},
     {"id": "CRVH_MISFIRE_COUNT_6_VAR_1", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #6, variant 1"}
   ]},
-{ "hdr": "DA15", "rax": "15", "dbg": true, "cmd": {"22": "2021"}, "freq": 1,
+{ "hdr": "DA15", "rax": "15", "dbg": true, "cmd": {"22": "2021"}, "freq": 5,
   "signals": [
     {"id": "CRVH_CHG_V_IN",  "path": "Battery", "fmt": {"bix": 240, "len": 16, "max": 500, "div": 10, "unit": "volts" }, "name": "Normal charger input voltage"},
     {"id": "CRVH_CHG_V_OUT", "path": "Battery", "fmt": {"bix": 272, "len": 16, "max": 500, "div": 10, "unit": "volts" }, "name": "Normal charger output voltage"}
@@ -313,14 +313,14 @@
     {"id": "CRVH_CEL_MIN_SOC_B", "path": "Battery.Cells", "fmt": {"bix": 600,  "len": 16, "max": 100,    "div": 100, "unit": "percent"     }, "name": "Individual cell min SOC, line B"},
     {"id": "CRVH_HVB_CAP_B",     "path": "Battery.Cells", "fmt": {"bix": 1336, "len": 16, "max": 655.35, "div": 100, "unit": "ampereHours" }, "name": "Battery capacity, line B"}
   ]},
-{ "hdr": "DA16", "rax": "16", "dbg": true, "cmd": {"22": "202C"}, "freq": 1,
+{ "hdr": "DA16", "rax": "16", "dbg": true, "cmd": {"22": "202C"}, "freq": 5,
   "signals": [
     {"id": "CRVH_HVB_MOD_1B_T", "path": "Battery", "fmt": {"bix": 472, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 1B temperature"},
     {"id": "CRVH_HVB_MOD_2A_T", "path": "Battery", "fmt": {"bix": 488, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 2A temperature"},
     {"id": "CRVH_HVB_MOD_3B_T", "path": "Battery", "fmt": {"bix": 504, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 3B temperature"},
     {"id": "CRVH_HVB_MOD_4B_T", "path": "Battery", "fmt": {"bix": 520, "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 4B temperature"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 5,
   "signals": [
     {"id": "CRVH_ATF_T", "path": "Transmission", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Automatic transmission fluid temperature"}
   ]},
@@ -332,11 +332,11 @@
   "signals": [
     {"id": "CRVH_GEAR_1D", "path": "Transmission", "fmt": {"bix": 184, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2660"}, "freq": 5,
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2660"}, "freq": 30,
   "signals": [
     {"id": "CRVH_ODO_V2", "path": "Trips", "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "DA1E", "rax": "1E", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
+{ "hdr": "DA1E", "rax": "1E", "dbg": true, "cmd": {"22": "2201"}, "freq": 5,
   "signals": [
     {"id": "CRVH_ATF_T_VAR_4", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 4", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
@@ -362,7 +362,7 @@
         }}
     }
   ]},
-{ "hdr": "DA26", "rax": "26", "dbg": true, "cmd": {"22": "6001"}, "freq": 5,
+{ "hdr": "DA26", "rax": "26", "dbg": true, "cmd": {"22": "6001"}, "freq": 15,
   "signals": [
     {"id": "CRVH_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
     {"id": "CRVH_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
@@ -388,7 +388,7 @@
     {"id": "CRVH_MSTR_CYL_STK", "path": "Electrical", "fmt": {"bix": 232, "len": 16, "max": 6553.5, "div": 10,  "unit": "millimeters" }, "name": "Master cylinder stroke"},
     {"id": "CRVH_SLV_CYL_STK",  "path": "Electrical", "fmt": {"bix": 248, "len": 16, "max": 6553.5, "div": 10,  "unit": "millimeters" }, "name": "Slave cylinder stroke"}
   ]},
-{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 1, "dbgfilter": { "to": 2025, "from": 2028 },
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 30, "dbgfilter": { "to": 2025, "from": 2028 },
   "signals": [
     {"id": "CRVH_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 200000, "unit": "miles" }, "name": "Odometer, variation 3"}
   ]},
@@ -396,7 +396,7 @@
   "signals": [
     {"id": "CRVH_AAT", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outside air temperature"}
   ]},
-{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7029"}, "freq": 5, "dbgfilter": { "to": 2025, "from": 2028 },
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7029"}, "freq": 30, "dbgfilter": { "to": 2025, "from": 2028 },
   "signals": [
     {"id": "CRVH_FLV", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
