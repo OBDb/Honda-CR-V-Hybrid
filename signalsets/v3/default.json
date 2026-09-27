@@ -414,6 +414,31 @@
     {"id": "CRVH_MAINT_COOL",      "path": "Engine", "fmt": {"bix": 288, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, engine coolant"},
     {"id": "CRVH_MAINT_BRK_FLD",   "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, rake fluid"},
     {"id": "CRVH_MAINT_AIR_CLN",   "path": "Engine", "fmt": {"bix": 336, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, air cleaner"}
+  ]},
+{ "hdr": "DBEF", "dbg": true, "cmd": {"22": "2001"}, "freq": 5,
+  "signals": [
+    {"id": "CRVH_MOTOR_INVERTER_CURRENT",      "path": "Engine",   "fmt": {"bix": 48,  "len": 16, "max": 327.67,  "min": -327.68,                "div": 100,             "sign": true, "unit": "amps"       }, "name": "Motor inverter, current"},
+    {"id": "CRVH_BATTERY_COOLANT_TEMPERATURE", "path": "Battery",  "fmt": {"bix": 88,  "len": 8,  "max": 215,     "min": -40,                                "add": -40,               "unit": "celsius"    }, "name": "Battery coolant temperature"},
+    {"id": "CRVH_BATTERY_MODULE_POWER",        "path": "Battery",  "fmt": {"bix": 168, "len": 16, "max": 524.272, "min": -524.288, "mul": 0.016,                         "sign": true, "unit": "kilowatts"  }, "name": "Battery module power"},
+    {"id": "CRVH_GENERATOR_MOTOR_SPEED",       "path": "Movement", "fmt": {"bix": 184, "len": 8,  "max": 16320,                    "mul": 64,                                          "unit": "rpm"        }, "name": "Generator motor speed"},
+    {"id": "CRVH_CABIN_AIR_TEMPERATURE",       "path": "Engine",   "fmt": {"bix": 200, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                "unit": "fahrenheit" }, "name": "Cabin air temperature"},
+    {"id": "CRVH_OUTSIDE_AIR_TEMPERATURE",     "path": "Engine",   "fmt": {"bix": 208, "len": 8,  "max": 491,                      "mul": 1.8,               "add": 32,                "unit": "fahrenheit" }, "name": "Outside air temperature"},
+    {"id": "CRVH_HV_BATTERY_FAN_3_SPEED",      "path": "Battery",  "fmt": {"bix": 288, "len": 8,  "max": 25500,                    "mul": 100,                                         "unit": "rpm"        }, "name": "HV battery fan 3 speed"}
+  ]},
+{ "hdr": "DBEF", "dbg": true, "cmd": {"22": "2010"}, "freq": 5,
+  "signals": [
+    {"id": "CRVH_HV_BATTERY_CURRENT",          "path": "Battery", "fmt": {"bix": 32,  "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "amps"    }, "name": "HV battery current"},
+    {"id": "CRVH_DC_DC_CONVERTER_TEMPERATURE", "path": "Engine",  "fmt": {"bix": 104, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "celsius" }, "name": "DC-DC converter temperature"}
+  ]},
+{ "hdr": "DBEF", "dbg": true, "cmd": {"22": "2012"}, "freq": 1,
+  "signals": [
+    {"id": "CRVH_HV_BATTERY_USABLE_CAPACITY",          "path": "Battery", "fmt": {"bix": 32,  "len": 8,  "max": 100,                                           "unit": "percent" }, "name": "HV battery usable capacity"},
+    {"id": "CRVH_STATE_OF_CHARGE",                     "path": "Battery", "fmt": {"bix": 40,  "len": 8,  "max": 100,                                           "unit": "percent" }, "name": "State of charge"},
+    {"id": "CRVH_HV_BATTERY_CELL_MAX_STATE_OF_CHARGE", "path": "Battery", "fmt": {"bix": 208, "len": 16, "max": 100, "min": -327.68, "div": 100, "sign": true, "unit": "percent" }, "name": "HV battery cell max state of charge"}
+  ]},
+{ "hdr": "DBEF", "dbg": true, "cmd": {"22": "2222"}, "freq": 1,
+  "signals": [
+    {"id": "CRVH_HV_BATTERY_MAX_CELL_VOLTAGE", "path": "Battery", "fmt": {"bix": 64, "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "HV battery max cell voltage"}
   ]}
 ]
 }
