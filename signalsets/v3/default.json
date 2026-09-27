@@ -427,7 +427,7 @@
   ]},
 { "hdr": "DBEF", "dbg": true, "cmd": {"22": "2010"}, "freq": 5,
   "signals": [
-    {"id": "CRVH_HV_BATTERY_CURRENT",          "path": "Battery", "fmt": {"bix": 32,  "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "amps"    }, "name": "HV battery, current"},
+    {"id": "CRVH_HV_BATTERY_CURRENT",          "path": "Battery", "fmt": {"bix": 32,  "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "amps"    }, "name": "HV battery current"},
     {"id": "CRVH_DC_DC_CONVERTER_TEMPERATURE", "path": "Engine",  "fmt": {"bix": 104, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "celsius" }, "name": "DC-DC converter temperature"}
   ]},
 { "hdr": "DBEF", "dbg": true, "cmd": {"22": "2012"}, "freq": 1,
