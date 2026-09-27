@@ -7,14 +7,14 @@ test_cases:
     MAFB_SUP: 0
   response: 18DAF1100741660100000000
 - expected_values:
-    MAFA: 2.625
+    MAFA: 3.25
     MAFA_SUP: 1
     MAFB: 0
     MAFB_SUP: 0
-  response: 18DAF1100741660100540000
+  response: 18DAF1100741660100680000
 - expected_values:
-    MAFA: 19
+    MAFA: 24.875
     MAFA_SUP: 1
     MAFB: 0
     MAFB_SUP: 0
-  response: 18DAF1100741660102600000
+  response: 18DAF11007416601031C0000
