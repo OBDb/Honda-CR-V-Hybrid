@@ -1,0 +1,32 @@
+command_id: DB33.0143
+test_cases:
+- expected_values:
+    LOAD_ABS: 0
+  response: 18DAF1100441430000
+- expected_values:
+    LOAD_ABS: 10.19608
+  response: 18DAF110044143001A
+- expected_values:
+    LOAD_ABS: 11.76471
+  response: 18DAF110044143001E
+- expected_values:
+    LOAD_ABS: 19.60784
+  response: 18DAF1100441430032
+- expected_values:
+    LOAD_ABS: 44.31373
+  response: 18DAF1100441430071
+- expected_values:
+    LOAD_ABS: 47.05882
+  response: 18DAF1100441430078
+- expected_values:
+    LOAD_ABS: 50.58824
+  response: 18DAF1100441430081
+- expected_values:
+    LOAD_ABS: 54.90196
+  response: 18DAF110044143008C
+- expected_values:
+    LOAD_ABS: 61.56863
+  response: 18DAF110044143009D
+- expected_values:
+    LOAD_ABS: 74.5098
+  response: 18DAF11004414300BE
