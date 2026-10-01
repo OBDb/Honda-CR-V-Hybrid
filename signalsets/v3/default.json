@@ -1,4 +1,6 @@
 { "ecu": [
+    { "hdr": "DA01", "type": "battery" },
+    { "hdr": "DA10", "type": "engine" },
     { "hdr": "DA26", "type": "tpms" }
   ],
   "commands": [
