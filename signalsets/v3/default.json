@@ -4,7 +4,7 @@
     { "hdr": "DA26", "type": "tpms" }
   ],
   "commands": [
-{ "hdr": "DA01", "rax": "01", "cmd": {"22": "2028"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024, 2025, 2026], "from": 2028 },
+{ "hdr": "DA01", "rax": "01", "cmd": {"22": "2028"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024, 2026], "from": 2028 },
   "signals": [
     {"id": "CRVH_CEL_V_A1",  "path": "Battery.Cells", "fmt": {"bix": 216,  "len": 16, "max": 5000, "div": 5, "unit": "millivolts" }, "name": "Individual cell voltage A1"},
     {"id": "CRVH_CEL_V_A2",  "path": "Battery.Cells", "fmt": {"bix": 232,  "len": 16, "max": 5000, "div": 5, "unit": "millivolts" }, "name": "Individual cell voltage A2"},
@@ -91,7 +91,7 @@
     {"id": "CRVH_CEL_V_A83", "path": "Battery.Cells", "fmt": {"bix": 1528, "len": 16, "max": 5000, "div": 5, "unit": "millivolts" }, "name": "Individual cell voltage A83"},
     {"id": "CRVH_CEL_V_A84", "path": "Battery.Cells", "fmt": {"bix": 1544, "len": 16, "max": 5000, "div": 5, "unit": "millivolts" }, "name": "Individual cell voltage A84"}
   ]},
-{ "hdr": "DA01", "rax": "01", "cmd": {"22": "202A"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024, 2025, 2026], "from": 2028 },
+{ "hdr": "DA01", "rax": "01", "cmd": {"22": "202A"}, "freq": 1, "dbgfilter": { "to": 2022, "years": [2024, 2026], "from": 2028 },
   "signals": [
     {"id": "CRVH_SOC",          "path": "Battery", "fmt": {"bix": 400,  "len": 8,  "max": 100,                                           "unit": "percent"     }, "name": "State of charge",                                 "suggestedMetric": "stateOfCharge"},
     {"id": "CRVH_HVB_C_TOTAL",  "path": "Battery", "fmt": {"bix": 456,  "len": 16, "max": 200,    "min": -100, "div": 50,  "sign": true, "unit": "amps"        }, "name": "High voltage battery total current",              "suggestedMetric": "tractionBatteryCurrent"},
@@ -102,7 +102,7 @@
     {"id": "CRVH_AAT_OUT",      "path": "Engine",  "fmt": {"bix": 840,  "len": 8,  "max": 127,    "min": -40,              "sign": true, "unit": "celsius"     }, "name": "Ambient air temperature, outside"},
     {"id": "CRVH_HVB_CAP",      "path": "Battery", "fmt": {"bix": 1336, "len": 16, "max": 655.35,              "div": 100,               "unit": "ampereHours" }, "name": "High voltage battery total capacity"}
   ]},
-{ "hdr": "DA01", "rax": "01", "cmd": {"22": "202C"}, "freq": 5, "dbgfilter": { "to": 2022, "years": [2024, 2025, 2026], "from": 2028 },
+{ "hdr": "DA01", "rax": "01", "cmd": {"22": "202C"}, "freq": 5, "dbgfilter": { "to": 2022, "years": [2024, 2026], "from": 2028 },
   "signals": [
     {"id": "CRVH_HVB_MOD_1A_T", "path": "Battery", "fmt": {"bix": 472,  "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 1A temperature"},
     {"id": "CRVH_HVB_MOD_3A_T", "path": "Battery", "fmt": {"bix": 504,  "len": 16, "max": 215, "min": -40, "div": 10, "sign": true, "unit": "celsius" }, "name": "High voltage battery module 3A temperature"},
